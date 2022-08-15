@@ -1,0 +1,24 @@
+<div>
+    <div class="beers">
+        {{#each beers}}
+        <div class="eachBeer">
+            <div class="left">
+                <h3>
+                {{this.name}}
+                </h3>
+            <div class="imageBeer">
+                <img src="{{this.image_url}}" alt="">
+            </div>
+            </div>
+            <div class="right">
+             {{this.tagline}}
+             {{this.first_brewed}}
+             {{this.description}}
+            </div>
+            <div class="knowMoreButton">
+                <a class="more" href="/beer/{{this.id}}">Learn More</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

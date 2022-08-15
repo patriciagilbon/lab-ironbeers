@@ -1,0 +1,27 @@
+<section class="py-5">
+    {{#each beer}}
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6">
+                        <img class="productImage" src={{this.image_url}} alt="..." /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">{{this.tagline}}</div>
+                        <h1 class="display-5 fw-bolder">{{this.name}}</h1>
+                        <p class="lead">{{this.description}}</p>
+                        <h3 class="display-5 fw-bolder">Food pairing</h3>
+                        <p>{{this.food_pairing}}</p>
+                        <h3 class="display-5 fw-bolder">Brewer tips</h3>
+                        <p>{{this.brewers_tips}}</p>
+                        <h3 class="display-5 fw-bolder">First brewed</h3>
+                        <p>{{this.first_brewed}}</p>
+                        <div class="d-flex">
+                            <div class="knowMoreButton">
+                                <a class="btn btn-dark" href="/beers">Go back</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        {{/each}}
+        </section>
